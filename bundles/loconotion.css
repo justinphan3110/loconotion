@@ -130,11 +130,15 @@ a[data-token-index] svg.page {
   }
 
   /* collapses flex rows into columns */
-  .notion-column_list-block > div {
+  /* .notion-column_list-block > div {
     flex-direction: column;
-  }
+  } */
   .notion-column_list-block > div > * {
     width: unset !important;
+  }
+
+  .notion-image-block {
+    margin-right: 2vw !important;
   }
 
   /* forces gallery to wrap around pages */
