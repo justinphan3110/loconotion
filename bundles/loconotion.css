@@ -77,8 +77,16 @@ a[data-token-index] svg.page {
   .notion-scroller > div > div:not([class]) {
     width: 100% !important;
     max-width: 960px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  .notion-scroller > div > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]), .notion-scroller > div > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .notion-scroller > div > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) > div:not([class]) > div{
+    font-size:32px !important;
+    margin:-20px 0 20px 0;
   }
 
   /* normalizes content width */
@@ -88,14 +96,23 @@ a[data-token-index] svg.page {
   .notion-page-content > .notion-collection_view-block > .notion-scroller > div {
     width: 100vw !important;
     /* max-width: unset !important; */
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+    padding-right: 24px !important;
+    padding-left: 24px !important;
+    font-size: 12px !important;
   }
 
   /* add padding to banner, but not to image */
   .notion-frame > .notion-scroller > div:first-child > div:last-child {
     padding-right: 2em !important;
     padding-left: 2em !important;
+  }
+
+  .notion-header-block > div {
+    font-size: 12px !important;
+  }
+  
+  .notion-sub_sub_header-block > div {
+    font-size: 12px !important;
   }
 
   /* add padding to content */
@@ -108,7 +125,8 @@ a[data-token-index] svg.page {
   .notion-frame > .notion-scroller > .notion-scroller > .notion-calendar-view {
     padding-right: 2em !important;
     padding-left: 2em !important;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+
   }
 
   /* collapses flex rows into columns */
